@@ -18,7 +18,6 @@ hot_posts = subreddit.hot(limit = 1)
 
 for post in hot_posts:
     if (subreddit_search in post.title) == False:
-        print('No Spoiler Yet')
         exit()
     subject = "One Piece Spoilers Are Out!"
     body = f"The reddit post {post.title} made by u/{post.author} confirms that spoilers are out for One Piece. Be careful browsing socials to aviod spoilers!\n\n\nLink to Post: {post.url}"
